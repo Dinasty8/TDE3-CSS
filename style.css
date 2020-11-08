@@ -1,0 +1,213 @@
+@font-face {
+  font-family: starkey;
+  src: url(font/starkey/Starkey_PERSONAL_USE.ttf);
+}
+@font-face {
+  font-family: mumbai;
+  src: url(font/mumbai/Mumbai\ Curry\ Demo.otf);
+}
+@font-face {
+  font-family: vogue;
+  src: url(font/vogue/Vogue.ttf);
+}
+
+body {
+  max-width: 65%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background: #554 url(imgs/space1.gif);
+  text-align: center;
+}
+
+.page-wrapper {
+  background-color: darkslategray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.preamble {
+  grid-area: footer;
+}
+
+.intro {
+  grid-area: header;
+  background-image: url("imgs/portal.png");
+  background-position: center;
+  height: 100%;
+  border: 3px, 3px solid black;
+}
+
+.intro header {
+  margin: 20%;
+  font-family: starkey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+.intro header h1 {
+  font-size: 45px;
+  margin: 0%;
+  align-items: center;
+}
+.intro header h2 {
+  font-size: 25px;
+  margin: 0%;
+}
+
+.summary p:first-child {
+  margin: 3px;
+  padding: 3px;
+  font-family: starkey;
+  font-size: 15px;
+  color: black;
+  border: 2px solid black;
+  background-color: darkgray;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.preamble {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  width: 18%;
+  top: 202%;
+  background-color: darkgray;
+  padding: 5px;
+  margin: 18px;
+  border: 3px solid black;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.preamble h3 {
+  margin: 0 auto;
+  font-family: starkey;
+  font-size: 18px;
+  text-decoration: 2px underline;
+  text-align: center;
+  text-transform: none;
+}
+.preamble p {
+  text-align: start;
+  font-size: 25px;
+  margin: 5px;
+  font-family: mumbai;
+  text-transform: none;
+}
+
+.summary p:last-child {
+  font-weight: bold;
+  position: absolute;
+  width: 18%;
+  top: 279%;
+  background-color: darkgrey;
+  padding: 5px;
+  margin: 18px;
+  border: 3px solid black;
+  font-family: starkey;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+}
+.summary a:link {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgb(71, 8, 80);
+}
+.summary a:hover {
+  color: black;
+}
+
+footer,
+.design-selection,
+#lfavorites,
+.zen-resources,
+.design-archives {
+  background-color: darkgray;
+  padding: 7px;
+  margin: 15px;
+  border: 3px solid black;
+  text-align: start;
+  border-radius: 10px;
+}
+abbr {
+  font-weight: bold;
+  font-style: oblique;
+  cursor: help;
+}
+
+.main {
+  grid-area: main;
+
+  border: 3px solid black;
+}
+
+.main h3 {
+  background-color: darkgray;
+  border: 3px solid black;
+  font-family: starkey;
+  font-size: 20px;
+  border-radius: 10px 25px;
+}
+.main p {
+  margin: 15px;
+  font-family: vogue;
+  font-size: 14px;
+  color: #cde0f3;
+  text-align: justify;
+}
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background-color: black;
+  margin: 10px;
+  border-radius: 10px;
+  padding-bottom: 3px;
+}
+
+.sidebar {
+  background-color: maroon;
+  grid-area: sidebar;
+  border: 3px solid black;
+  margin-right: -3px;
+}
+.sidebar h3 {
+  margin: 0 auto;
+  font-family: starkey;
+  text-decoration: 2px underline;
+  text-align: center;
+}
+.sidebar ul {
+  text-align: start;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-left: 30px;
+  font-family: mumbai;
+}
+.sidebar a:link {
+  color: rgb(71, 8, 80);
+}
+.sidebar a:hover {
+  color: black;
+}
+footer {
+  font-family: mumbai;
+  text-transform: none;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+footer a:link {
+  color: rgb(71, 8, 80);
+}
+footer a:hover {
+  color: black;
